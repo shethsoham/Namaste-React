@@ -1,4 +1,4 @@
-<!-- Injecting React in library -->
+<!-- Injecting React in library and Creating Hello world in react-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,5 +13,16 @@
     <!-- React Dom : React library useful for react operations -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        //1. react.create element
+        //2. create root
+        // 3. render
+        const heading = React.createElement("h1",{},"Hello Welcome to React World");
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+
+    </script>
+     
 </body>
 </html>
